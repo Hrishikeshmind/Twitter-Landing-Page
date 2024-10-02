@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Home Page</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Google Fonts for Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- External CSS File (Tailwind for this example) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <style>
+        /* Custom Styles */
+        body {
+            background: linear-gradient(145deg, #2a2a72, #009ffd);
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .container {
+            padding-top: 5rem;
+        }
+
+        .hero {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero button {
+            background-color: #ff007f;
+            padding: 1rem 2.5rem;
+            font-size: 1.2rem;
+            color: white;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .hero button:hover {
+            background-color: #d9006f;
+            transform: scale(1.05);
+        }
+
+        .sidebar ul li:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: scale(1.02);
+        }
+
+        .post-button {
+            background-color: #1d9bf0;
+            color: white;
+            padding: 0.75rem 2rem;
+            font-size: 1.2rem;
+            border-radius: 30px;
+            transition: background-color 0.3s;
+        }
+
+        .post-button:hover {
+            background-color: #1480d6;
+            transform: scale(1.05);
+        }
+
+        .invert svg {
+            fill: white;
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <div class="container mx-auto hero">
+        <h1>Welcome to X</h1>
+        <p>Join the conversation and stay connected with the world</p>
+        <button>Get Started</button>
+    </div>
+
+    <!-- Sidebar and Content -->
+    <div class="flex container mx-auto">
+        <div class="first w-[20%] space-y-6 p-5 text-white">
+            <!-- Logo -->
+            <div class="invert mx-5 my-3">
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+                    <g>
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+                    </g>
+                </svg>
+            </div>
+            <!-- Sidebar Navigation -->
+            <div class="sidebar">
+                <ul class="flex flex-col text-xl font-bold space-y-3">
+                    <li class="flex items-center gap-3 w-fit cursor-pointer px-5 py-3 rounded-lg transition-all"><span class="material-symbols-outlined text-3xl">home</span>Home</li>
+                    <li class="flex items-center gap-3 w-fit cursor-pointer px-5 py-3 rounded-lg transition-all"><span class="material-symbols-outlined text-3xl">search</span>Explore</li>
+                    <li class="flex items-center gap-3 w-fit cursor-pointer px-5 py-3 rounded-lg transition-all"><span class="material-symbols-outlined text-3xl">notifications</span>Notifications</li>
+                    <li class="flex items-center gap-3 w-fit cursor-pointer px-5 py-3 rounded-lg transition-all"><span class="material-symbols-outlined text-3xl">email</span>Messages</li>
+                    <li class="flex items-center gap-3 w-fit cursor-pointer px-5 py-3 rounded-lg transition-all"><span class="material-symbols-outlined text-3xl">chat</span>Grok</li>
+                    <li class="flex items-center gap-3 w-fit cursor-pointer px-5 py-3 rounded-lg transition-all"><span class="material-symbols-outlined text-3xl">lists</span>Lists</li>
+                    <li class="flex items-center gap-3 w-fit cursor-pointer px-5 py-3 rounded-lg transition-all"><span class="material-symbols-outlined text-3xl">bookmarks</span>Premium</li>
+                    <li class="flex items-center gap-3 w-fit cursor-pointer px-5 py-3 rounded-lg transition-all"><span class="material-symbols-outlined text-3xl">person</span><a href="profile.html">Profile</a></li>
+                    <li class="flex items-center gap-3 w-fit cursor-pointer px-5 py-3 rounded-lg transition-all"><span class="material-symbols-outlined text-3xl">more</span>More</li>
+                </ul>
+            </div>
+            <!-- Post Button -->
+            <div class="flex items-center gap-3 w-fit cursor-pointer py-3">
+                <button class="post-button">Post</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
